@@ -20,8 +20,8 @@ def search(x, y):
 
 @app.route('/route/<x>/<y>')
 def route(x,y):
-    d = gmaps.directions(origin=x,destination=y,mode='transit',avoid=search(x,y),alternatives=True)
-    return d[0]
+    d = gmaps.directions(origin=x,destination=y,mode='transit',avoid=search(x,y),alternatives=True)[0]
+    return d
 
 
 if __name__ == "__main__":
