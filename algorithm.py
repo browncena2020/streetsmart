@@ -46,6 +46,9 @@ def search(x, y):
         a.append(i)
     return a
 
+
+##This is the Google Maps directions() function directly from the gmaps github
+
 def directions(client, origin, destination,
                mode=None, waypoints=None, alternatives=False, avoid=None,
                language=None, units=None, region=None, departure_time=None,
